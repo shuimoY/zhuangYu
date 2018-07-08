@@ -1,0 +1,130 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body,canvas,div{ 
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	-khtml-user-select: none;
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+html, body {
+  background-color: #fff;
+  font-size: 10px;
+  padding: 0;
+  margin: 0;
+}
+
+#canvas{
+	position: absolute; 
+	/*display: none;*/ 
+}
+#dom_overlay_container{
+	pointer-events:none; 
+	overflow:hidden; 
+	position: absolute; 
+	left: 0px; 
+	top: 0px; 
+	/*display: none;*/
+}
+ #animation_container{
+ 	font-size: 10px;
+	position:absolute;
+	margin:auto;
+	left:0;right:0;
+	top:0;bottom:0;
+ }
+
+input {
+	padding: 0;
+	margin: 0;
+	border: none;
+	font-family: "times new roman";
+	font-size: 4.6rem;
+	text-align: center;
+	color: #333;
+	background: transparent;
+	background-color: transparent;
+}
+
+input:focus {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	outline: none;
+	color: #333;
+}
+
+textarea {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	border: none;
+	text-align: left;
+	font-family: Times New Roman;
+	color: #2a2a2a;
+	font-size: 4.6rem;
+	background-color: transparent;
+	/*vertical-align: bottom;*/
+	line-height: 5.4rem;
+	resize: none;
+	overflow-y: visible;
+	/*background-color: #FFF7EB;*/
+	/*border-bottom: 1px solid #AD6B00;
+	text-decoration: underline;*/
+}
+textarea::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #F5F5F5;
+}
+textarea::-webkit-scrollbar {
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+textarea::-webkit-scrollbar-thumb {
+	background-color: #F90;
+	background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent)
+}

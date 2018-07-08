@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="authoring-tool" content="Adobe_Animate_CC">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<!-- 删除苹果默认的工具栏和菜单栏 -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!-- 设置苹果工具栏颜色 -->
+		<meta name="format-detection" content="telphone=no, email=no" />
+		<!-- 忽略页面中的数字识别为电话，忽略email识别 -->
+		<!-- 启用360浏览器的极速模式(webkit) -->
+		<meta name="renderer" content="webkit">
+		<!-- 避免IE使用兼容模式 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+		<meta name="HandheldFriendly" content="true">
+		<!-- 微软的老式浏览器 -->
+		<meta name="MobileOptimized" content="320">
+		<!-- uc强制竖屏 -->
+		<meta name="screen-orientation" content="landscape">
+		<!-- QQ强制竖屏 -->
+		<meta name="x5-orientation" content="landscape">
+		<!-- UC强制全屏 -->
+		<meta name="full-screen" content="yes">
+		<!-- QQ强制全屏 -->
+		<meta name="x5-fullscreen" content="true">
+		<!-- UC应用模式 -->
+		<meta name="browsermode" content="application">
+		<!-- QQ应用模式 -->
+		<meta name="x5-page-mode" content="app">
+		<!-- windows phone 点击无高光 -->
+		<meta name="msapplication-tap-highlight" content="no">
+		<!-- 适应移动端end -->
+		<meta name="full-screen" content="yes">
+		<title>壮语文学习(二年级上册)</title>
+		<link href="./css/index.css" rel="stylesheet" type="text/css" />
+		<script src="./libs/createjs-2015.11.26.min.js"></script>
+		<script src="./libs/preloadjs-NEXT.min.js"></script>
+		<script src="./js/ui/dialogs/BaseDialog.js"></script>
+		<script src="./js/ui/dialogs/RecordPlayContainer.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/SuenvaSoundContainer.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/ExerciseSoundContainer.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/CoverPageContainer.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/CatalogPageContainer.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/ScrollbarListContainer.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/ChapterContainer.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/LessonOnePlaySoundContainer_0.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/LessonOneConnectionLineContainer_2.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/LessonOneDrawWordContainer_3.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/LessonOneRecordContainer_5.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/LessonOneExDrawSentenceContainer_12.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/LessonOneExLineationContainer_13.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/LessonTwoInputContainer_1.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/LessonOneDragExContainer_5.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/CarouselContainer.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/JundgeRightOrWrong.js?v=0.2"></script>
+		<script src="./js/manager/MainSceneManager.js?v=0.2"></script>
+		<script src="./js/ui/dialogs/RecordPlayContainer.js?v=0.2"></script> 
+		 <script src="./js/data.js?v=0.2"></script> 
+		<script src="./js/index.js?v=0.2"></script>
+		<script src="./js/createjs-utils.js?v=0.3"></script> 
+		<!--<script src="./cordova.js"></script>-->
+		 <script src="./js/main.js"></script> 
+		<!--<script src="./minified/game.min.js"></script>-->
+		<style id="foo">
+			@font-face {
+				font-family: 'FZZhunYuan-M02';
+				font-style: normal;
+				font-weight: normal;
+				src: local('FZZhunYuan-M02'), url('./assets/fonts/FZY3K.TTF') format('truetype');
+			}
+			
+			@font-face {
+				font-family: 'Hero';
+				font-style: normal;
+				font-weight: normal;
+				src: local('Hero'), url('./assets/fonts/HERO.OTF') format('truetype');
+			}
+		</style>
+	</head>
+	<!--//方正准圆_GBK-->
+
+	<body>
+		<div id="animation_container">
+			<canvas id="canvas"></canvas>
+			<div id="dom_overlay_container">
+			</div>
+		</div>
+		<script>
+			loadCSS();
+
+			function loadFonts(config) {
+				var loader = new createjs.FontLoader(config, true);
+				loader.on("complete", handleLoad);
+				loader.load();
+			}
+
+			function handleLoad() {
+				console.log("font loaded!!!");
+			}
+
+			function loadCSS() {
+				loadFonts({
+					src: foo,
+					type: "fontcss"
+				});
+				return false;
+			}
+		</script>
+	</body>
+
+</html>
